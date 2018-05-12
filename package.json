@@ -1,0 +1,8 @@
+{
+  "name": "faces-of-zach-api",
+  "version": "1.0.0",
+  "main": "index",
+  "author": "zachnthebox",
+  "license": "MIT",
+  "private": false
+}
