@@ -2,7 +2,14 @@
   "name": "faces-of-zach-api",
   "version": "1.0.0",
   "main": "index",
+  "scripts": {
+    "serve": "node index"
+  },
   "author": "zachnthebox",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "express": "^4.16.3",
+    "sharp": "^0.20.2"
+  }
 }
