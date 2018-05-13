@@ -38,6 +38,8 @@ function getImage(width, height) {
   return fs.existsSync(path) && path || null;
 }
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/image/:width/:height', (req, res) => {
   const {
     width,
