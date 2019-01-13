@@ -1,4 +1,23 @@
 {
   "name": "faces-of-zach",
-  "alias": "www.facesofzach.com"
+  "alias": "www.facesofzach.com",
+  "version": 2,
+  "builds": [{
+    "src": "public/**/*",
+    "use": "@now/static"
+  }, {
+    "src": "index.js",
+    "use": "@now/node-server",
+    "config": {
+      "bundle": false,
+      "maxLambdaSize": "25mb"
+    }
+  }],
+  "routes": [{
+    "src": "/image/(.*)",
+    "dest": "index.js"
+  }, {
+    "src": "/(.*)",
+    "dest": "public/$1"
+  }]
 }
